@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+  float a, b, c, d;
+  printf(“Digite um valor para A:\n”);
+  scanf(“%f”, &a);
+  printf(“Digite um valor para B:\n”);
+  scanf(“%f”, &b);
+  c=(a-b);
+  d=c*c;
+  printf(“%.2f”, d);
+}
