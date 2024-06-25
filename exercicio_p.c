@@ -1,9 +1,12 @@
 #include<stdio.h>
-float main()
+void main()
 {
-    float A,R,c;
-    printf("Escreva o raio: ");
-    scanf("%f", &R);
-    A=3.1415926536*(R*R);
-    printf("A area da circunferencia eh: %.10f", A);
+    float SM,PR,NS,a;
+    printf("Escreva o Salario Mensal: ");
+    scanf("%f", &SM);
+    printf("Escreva o Percentual de Reajuste: ");
+    scanf("%f", &PR);
+    a=SM*(PR/100);
+    NS=SM+a;
+    printf("O novo salario eh: %.2f", NS);
 }
