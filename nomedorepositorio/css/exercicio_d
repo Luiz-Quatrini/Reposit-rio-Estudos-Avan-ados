@@ -1,0 +1,36 @@
+#include <stdio.h>
+void main()
+{
+    int N1,N2,N3,N4,MD1,MD2,NE;
+    printf("Este programa le quatro notas e calcula a media delas. Caso a media seja menor que 7, ela le tambem a nota de exame \n");
+    printf("Digite a Nota 1: \n");
+    scanf("%d",&N1);
+    printf("Digite a Nota 2: \n");
+    scanf("%d",&N2);
+    printf("Digite a Nota 3: \n");
+    scanf("%d",&N3);
+    printf("Digite a Nota 4: \n");
+    scanf("%d",&N4);
+    MD1=(N1+N2+N3+N4)/4;
+    if(MD1>=7)
+    {
+        printf("Aprovado.\n");
+        printf("A nota eh: %d",MD1);
+    }
+    else
+    {
+        printf("Digite a Nota de Exame:\n");
+        scanf("%d",&NE);
+        MD2=(MD1+NE)/2;
+        if(MD2>=5)
+        {
+            printf("Aprovado. \n");
+            printf("A nota eh: %d", MD2);
+        }
+        else
+        {
+            printf("Reprovado. \n");
+            printf("A nota eh: %d", MD2);
+        }
+    }
+}
