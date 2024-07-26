@@ -1,0 +1,16 @@
+#include <stdio.h>
+void main()
+{
+    int N,a;
+    printf("Este programa le um numero inteiro positivo ou negativo e se for negativo ele converte para positivo.\n");
+    printf("Digite um numero inteiro positivo ou negativo: \n");
+    scanf("%d",&N);
+    if(N<0)
+    {
+        a=N*(-1);
+        printf("Resultado: %d", a);
+    }else
+    {
+        printf("Resultado:%d",N);
+    }
+}
