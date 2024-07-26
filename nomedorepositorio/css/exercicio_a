@@ -1,0 +1,19 @@
+#include <stdio.h>
+void main()
+{
+    int A,B,c;
+    printf("Este programa le dois numeros (A e B) e calcula a diferenca entre o maior e o menor. \n");
+    printf("Digite o valor de A: \n");
+    scanf("%d",&A);
+    printf("Digite o valor de B: \n");
+    scanf("%d",&B);
+    if(A>B)
+    {
+        c=A-B;
+    }
+    else
+    {
+        c=B-A;
+    }
+    printf("A diferenca eh %d",c);
+}
