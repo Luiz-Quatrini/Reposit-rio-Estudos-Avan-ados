@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+   float A, B, C, Delta,X1,X2;
+   printf("Digite o valor de A: \n");
+   scanf("%f", &A);
+   printf("Digite o valor de B: \n");
+   scanf("%f", &B);
+   printf("Digite o valor de C: \n");
+   scanf("%f", &C);
+   Delta = (B * B) - 4 * A * C;
+   if (Delta < 0)
+   {
+       printf("Nao ha solucao real\n");
+   } else if (Delta > 0)
+   {
+       printf("Ha duas solucoes reais diferentes\n");
+       X1=(-B+sqrt(Delta))/2*A;
+       X2=(-B-sqrt(Delta))/2*A;
+       printf("X1=%.2f \n", X1);
+       printf("X2=%.2f \n", X2);
+   } else
+   {
+       printf("Ha apenas uma solucao real\n");
+       X1=(-B+sqrt(Delta))/2*A;
+       printf("X1=%.2f", X1);
+   }
+}
