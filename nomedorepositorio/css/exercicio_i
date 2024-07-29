@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+   int A, B, C, D, E, MA, ME;
+   printf("Digite o valor de A: \n");
+   scanf("%d", &A);
+   printf("Digite o valor de B: \n");
+   scanf("%d", &B);
+   printf("Digite o valor de C: \n");
+   scanf("%d", &C);
+   printf("Digite o valor de D: \n");
+   scanf("%d", &D);
+   printf("Digite o valor de E: \n");
+   scanf("%d", &E);
+   MA = A;
+   ME = A;
+   if (B > MA) MA = B;
+   if (C > MA) MA = C;
+   if (D > MA) MA = D;
+   if (E > MA) MA = E;
+   if (B < ME) ME = B;
+   if (C < ME) ME = C;
+   if (D < ME) ME = D;
+   if (E < ME) ME = E;
+   printf("O menor valor eh: %d\n", ME);
+   printf("O maior valor eh: %d\n", MA);
+}
