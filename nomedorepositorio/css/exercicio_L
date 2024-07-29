@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+   int A;
+   printf("Digite o valor de A: \n");
+   scanf("%d", &A);
+   if(!(A>3))
+   {
+     printf("%d \n", A);
+   }
+}
