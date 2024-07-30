@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int A, B;
+    printf("Digite um numero inteiro: \n");
+    scanf("%d", &A);
+    B=A*2;
+    if(B>30)
+    {
+        printf("O valor eh: %d", B);
+    }
+    else
+    {
+        printf("Erro.");
+    }
+}
