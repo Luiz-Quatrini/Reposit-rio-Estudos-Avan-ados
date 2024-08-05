@@ -1,22 +1,18 @@
 #include<stdio.h>
 void main()
 {
+    char SEXO;
     char NOME[50];
-    int SEXO;
+    printf("Digite seu sexo: ");
+    scanf(" %c", &SEXO);
     printf("Digite seu nome(Se composto, usar ''_'' como espaco): ");
     scanf("%s", NOME);
-    printf("Digite seu sexo (1 para M, 2 para F): ");
-    scanf("%d", &SEXO);
-    if(SEXO==1)
+    switch(SEXO)
     {
-        printf("Ilmo. Sr.%s.\n", &NOME);
-    }
-    else if(SEXO==2)
-    {
-        printf("Ilma. Sra.%s.\n", &NOME);
-    }
-    else
-    {
-        printf("Sexo informado invalido");
+        case 'M':
+        printf("Ilmo. Sr.%s", NOME);break;
+        case 'F':
+        printf("Ilma. Sra.%s", NOME);break;
+        default:printf("Sexo informado invalido");
     }
 }
