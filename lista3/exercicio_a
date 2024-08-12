@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int A,B,C,D;
+    A=15;
+    B=200;
+    for(C=A; C<=B;C++)
+    {
+        D=C*C;
+        printf("O quadrado de %d eh %d\n", C, D);
+    }
+}
