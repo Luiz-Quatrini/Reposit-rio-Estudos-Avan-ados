@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+int main() 
+{
+    int C, F; 
+    C = 0;
+    while (C<=100) 
+    {
+        F=(C * 9.0 / 5.0)+32.0;
+        printf("Em Celsius: %d°C\nEm Fahrenheit: %d°F\n", C, F);
+        C+=10;
+    }
+}
