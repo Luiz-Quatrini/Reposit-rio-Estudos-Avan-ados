@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+int main() 
+{
+    int A, B, BE, E;
+    BE = 1;
+    A = 0;
+    printf("Digite a base:\n ");
+    scanf("%d", &B);
+    printf("Digite o expoente:\n ");
+    scanf("%d", &E);
+    while (A < E) 
+    {
+        BE *= B;
+        A++;
+    }
+    printf("%d elevado a %d eh %d", B, E, BE);
+}
