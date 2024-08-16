@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int A,B,C,D;
+    A=0;
+    while(A<=15)
+    {
+        B=pow(3,A);
+        printf("A potencia de 3 elevado a %d eh: %d\n", A,B);
+        A++;
+    }
+}
