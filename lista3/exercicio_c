@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int A,B;
+    A=0;
+    B=1;
+    while(B<=100)
+    {
+        A+=B;
+        B++;
+    }
+    printf("A soma eh %d\n", A);
+}
