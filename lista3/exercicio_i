@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+int main() 
+{
+    int ATUAL, ANTERIOR, PROXIMO, A, B;
+    A = 0; 
+    B = 15;
+    ANTERIOR = 0;
+    ATUAL = 1;
+    printf("Os 15 primeiros números da sequência de Fibonacci são:\n");
+    if (B > 0) 
+    {
+        printf("%d ", ANTERIOR);
+    }
+    while (A < B - 1) 
+    {
+        printf("%d ", ATUAL); 
+        PROXIMO = ANTERIOR + ATUAL;
+        ANTERIOR = ATUAL;
+        ATUAL = PROXIMO;
+        A++;
+    }
+}
