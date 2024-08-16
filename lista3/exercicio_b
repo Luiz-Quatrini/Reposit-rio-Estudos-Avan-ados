@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int A,B,C;
+    B=0;
+    printf("Digite um numero para ser feita a tabuada: \n");
+    scanf("%d", &A);
+    while(B<=10)
+    {
+        C=A*B;
+        printf("%d x %d = %d \n", A,B,C);
+        B++;
+    }
+}
