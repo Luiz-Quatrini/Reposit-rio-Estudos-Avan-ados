@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    float a,b,contador,d;
+    a=0;
+    contador=1;
+    printf("Digite um numero real: \n");
+    scanf("%f", &b);
+    for(contador=1;contador<=15;contador++)
+    {
+        b*=contador;
+        a+=b;
+    }
+    printf("A soma dos fatoriais eh: %.2f\n", a);
+    d=a/15;
+    printf("A mehdia eh: %.2f\n", d);
+}
