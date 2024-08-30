@@ -3,8 +3,9 @@ int main()
 {
     int a,b,contador;
     a=0;
-    b=1;
     contador=1;
+    printf("Digite um numero:\n");
+    scanf("%d", &b);
     for(contador=1;contador<=15;contador++)
     {
         b*=contador;
