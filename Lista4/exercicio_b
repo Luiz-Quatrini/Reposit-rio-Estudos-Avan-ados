@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int i;
+    int vetorA[8]; int vetorB[8];
+    for (i = 0;i <= 8;i++)
+    {
+        vetorA[i] = i;
+    }
+    for (i = 0;i <= 8;i++)
+    {
+        vetorB[i] = vetorA[i] * 3;
+    }
+    for (i = 0;i <= 8;i++)
+    {
+        printf("%d\n", vetorB[i]);
+    }
+}
