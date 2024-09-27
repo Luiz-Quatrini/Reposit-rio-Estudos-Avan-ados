@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int i;
+    int vetorA[15]; int vetorB[15]; int vetorC[15];
+    for(i=0;i<15;i++)
+    {
+        vetorA[i]=i;
+    }
+    for(i=0;i<15;i++)
+    {
+        vetorB[i]= vetorA[i]*vetorA[i];
+    }
+    for(i=0;i<15;i++)
+    {
+        printf("%d eh o quadrado de %d\n", vetorB[i],vetorA[i]);
+    }
+}
