@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+   int i;
+   int vetorA[5];
+   int vetorB[5];
+   int vetorC[5];
+   int vetorD[15];
+   for(i = 0; i < 5; i++)
+   {
+       vetorA[i] = i;
+   }
+   for(i = 0; i < 5; i++)
+   {
+       vetorB[i] = i;
+   }
+   for(i = 0; i < 5; i++)
+   {
+       vetorC[i] = i;
+   }
+   for(i = 0; i < 5; i++)
+   {
+       vetorD[i] = vetorA[i];
+       vetorD[5 + i] = vetorB[i];
+       vetorD[10 + i] = vetorC[i];
+   }
+   for(i = 0; i < 15; i++)
+   {
+       printf("vetorD[%d] = %d\n", i, vetorD[i]);
+   }
+}
