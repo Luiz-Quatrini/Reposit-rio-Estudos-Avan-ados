@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    float vetorA[15], vetorB[15];
+    int i=0;
+    for(i=0;i<15;i++)
+    {
+        vetorA[i]=i;
+    }
+    for(i=0;i<15;i++)
+    {
+        if(i%2==0)
+        {
+            vetorB[i]=vetorA[i]/2;
+        }
+        else
+        {
+            vetorB[i]=vetorA[i]*1.5;
+        }
+        printf("Vetor A: %.2f, Vetor B: %.2f\n", vetorA[i], vetorB[i]);
+    }
+}
