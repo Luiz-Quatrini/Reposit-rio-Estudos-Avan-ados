@@ -1,0 +1,43 @@
+#include <stdio.h>
+int main() {
+    float vetorA[6], vetorB[6], vetorC[12];
+    int i;
+    printf("Adicione valores para A:\n");
+    for (i=0; i<6; i++)
+        {
+        if (i%2==0)
+        {
+            printf("Valor para A: \n");
+            scanf("%f", &vetorA[i]);
+
+        }
+        else if (i%2==1)
+        {
+
+            printf("Valor nao aceito");
+        }
+    }
+    printf("Adicone valores para B: \n");
+    for (i=0; i<6;i++)
+        {
+        if (i%2==1)
+        {
+            printf("Valor para B:");
+            scanf("%f", &vetorB[i]);
+        }
+        else if (i%2==0)
+        {
+            printf("Valor nao aceito");
+        }
+    }
+    for (i = 0; i < 6; i++)
+    {
+        vetorC[i] = vetorA[i];
+        vetorC[6 + i] = vetorB[i];
+    }
+    printf("Vetor C: \n");
+    for (i = 0; i < 12; i++)
+    {
+        printf("Vetor C[%d] = %.2f\n", i, vetorC[i]);
+    }
+}
